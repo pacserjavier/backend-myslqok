@@ -47,7 +47,7 @@ app.get("/dashboard", authMiddleware ,(req, res) => {
   res.render("viewlogin/dashboard", { usuario: req.session.usuario });
 });
 
-const conn = require("./db");
+//const conn = require("./db");
 
 app.listen(PORT, () => {
     console.log(`Servidor escuchando en http://localhost:${PORT}`)
