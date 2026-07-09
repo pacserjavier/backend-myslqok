@@ -2,6 +2,7 @@
 const express = require("express");
 const session = require("express-session");
 const authMiddleware = require("./middlewares/authMiddlewares");
+const {PORT} = require("./config");
 // importar Mysql
 const mysql = require("mysql2");
 // crear instancia para nuestra aplicacion
@@ -46,7 +47,6 @@ app.get("/dashboard", authMiddleware ,(req, res) => {
   res.render("viewlogin/dashboard", { usuario: req.session.usuario });
 });
 
-const PORT = process.env.PORT || 3000
 const conn = require("./db");
 
 app.listen(PORT, () => {
