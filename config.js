@@ -7,7 +7,6 @@ const DATABASE_USER = process.env.DATABASE_USER
 const DATABASE_PASSWORD = process.env.DATABASE_PASSWORD
 const DATABASE = process.env.DATABASE
 const DATABASE_PORT = process.env.DATABASE_PORT
-const DATABASE_hola = process.env.DATABASE_PORT
 
 
 module.exports = {
